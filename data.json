@@ -1,0 +1,114 @@
+{
+  "projects": [
+    {
+      "id": 0,
+      "project_name": "Random Quote Generator",
+      "description": "A simple web application that displays randomly selected quotes from a database according to a set timer interval.",
+      "technologies": ["html", "css", "javascript"],
+      "live_link": "https://teamtreehouse.com/home",
+      "github_link": "https://github.com/uqcadams/FSJS-Project-1-Random-Quote-Generator",
+      "image_urls": {
+        "main": "static/images/550x550.webp",
+        "thumbs": [
+          {
+            "src": "static/images/550x550.webp",
+            "alt": "description of image"
+          },
+          {
+            "src": "static/images/550x550.webp",
+            "alt": "description of image"
+          },
+          { "src": "static/images/550x550.webp", "alt": "description of image" }
+        ]
+      }
+    },
+    {
+      "id": 1,
+      "project_name": "Data Pagination and Filtering",
+      "description": "Demonstration of data pagination techniques using array and index filtering methods.",
+      "technologies": ["html", "css", "javascript"],
+      "live_link": "https://teamtreehouse.com/home",
+      "github_link": "https://github.com/uqcadams/FSJS-Project-2-Data-Pagination-and-Filtering",
+      "image_urls": {
+        "main": "static/images/550x550.webp",
+        "thumbs": [
+          {
+            "src": "static/images/550x550.webp",
+            "alt": "description of image"
+          },
+          {
+            "src": "static/images/550x550.webp",
+            "alt": "description of image"
+          },
+          { "src": "static/images/550x550.webp", "alt": "description of image" }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "project_name": "Interactive Form",
+      "description": "An interactive event booking form with input validation.",
+      "technologies": ["html", "css", "javascript"],
+      "live_link": "https://teamtreehouse.com/home",
+      "github_link": "https://github.com/uqcadams/FSJS-Project-3-Interactive-Form",
+      "image_urls": {
+        "main": "static/images/550x550.webp",
+        "thumbs": [
+          {
+            "src": "static/images/550x550.webp",
+            "alt": "description of image"
+          },
+          {
+            "src": "static/images/550x550.webp",
+            "alt": "description of image"
+          },
+          { "src": "static/images/550x550.webp", "alt": "description of image" }
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "project_name": "OOP Game Show App",
+      "description": "A word guessing game developed using vanilla javascript and custom user phrases.",
+      "technologies": ["html", "css", "javascript"],
+      "live_link": "https://teamtreehouse.com/home",
+      "github_link": "https://github.com/uqcadams/FSJS-Project-4-OOP-Game-Show-App",
+      "image_urls": {
+        "main": "static/images/550x550.webp",
+        "thumbs": [
+          {
+            "src": "static/images/550x550.webp",
+            "alt": "description of image"
+          },
+          {
+            "src": "static/images/550x550.webp",
+            "alt": "description of image"
+          },
+          { "src": "static/images/550x550.webp", "alt": "description of image" }
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "project_name": "Employee Directory",
+      "description": "A web application that fetches profiles from the random user api to populate a paginated employee directory site.",
+      "technologies": ["html", "css", "javascript"],
+      "live_link": "x",
+      "github_link": "https://github.com/uqcadams/FSJS-Project-5-Public-API-Requests",
+      "image_urls": {
+        "main": "static/images/550x550.webp",
+        "thumbs": [
+          {
+            "src": "static/images/550x550.webp",
+            "alt": "description of image"
+          },
+          {
+            "src": "static/images/550x550.webp",
+            "alt": "description of image"
+          },
+          { "src": "static/images/550x550.webp", "alt": "description of image" }
+        ]
+      }
+    }
+  ]
+}
