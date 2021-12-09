@@ -36,14 +36,6 @@ block content
       //- Replace the URLs in the src attributes below with interpolated template literals to dynamically add your project images, and add descriptions to the alt attributes (1200x550 should be the dimensions)
       each thumb in project.image_urls.thumbs
         img.project-img(src=`/${thumb.src}`, alt=`${thumb.alt}`)
-      //- ul
-      //-   each thumb in project.image_urls.thumbs
-      //-     li= thumb.src
-      //-     //- img(src=)
-      //-     img.project-img(src=`/${thumb.src}`, alt=`${thumb.alt}`)
-      //-     img.thumbnail(src=`/${thumb.src}`)
-        //-  img.project-img(src=`/${thumb.src}` alt=`${}`)
-
 
     nav.nav
       a(href='/')

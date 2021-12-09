@@ -33,6 +33,8 @@ Install the project dependencies using npm.
 npm install
 ```
 
-## Notes
+## Copyright Attributions
 
-aasdad
+Attribution for 404 Error handler image:
+
+www.freepik,com, (2021) 404 Error Handler Vector Image [Online] https://www.freepik.com/free-vector/404-error-with-person-looking-concept-illustration_20824303.htm

@@ -19,8 +19,13 @@ app.use((req, res, next) => {
 
 app.use((err, req, res, next) => {
   res.locals.error = err;
-  res.status(err.status);
-  res.render("error");
+  // res.status(err.status);
+
+  if (err.status === 404) {
+    res.render("page-not-found", err);
+  } else {
+    res.render("error", err);
+  }
 });
 
 // Establishes the local host port for the server to run on

@@ -6,7 +6,16 @@ block content
     a(href='/')
       span &larr;
       |  Back
-      
-  h1= error.message 
-  h2= error.status 
-  pre= error.stack
+  
+  section.portfolio-error.box
+
+      h1= error.message 
+      h2 Error code: #{error.status} 
+      details 
+        summary Expand to read the error summary
+        pre= error.stack
+
+  nav.nav
+    a(href='/')
+      span &larr;
+      |  Back
