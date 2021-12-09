@@ -33,6 +33,21 @@ Install the project dependencies using npm.
 npm install
 ```
 
+## Changes to Layout, CSS, and Styles
+
+All CSS changes have been applied to the custom-styles.css file, and imported after the styles.css. This respects the cascade, and allows these new styles to override the provided styles.
+
+Re-Skinning:
+
+The color theme implemented is an homage to the 1990s LucasArts game "Day of the Tentacle", perhaps one of the greatest games ever made. The purple and green colour themes are reminiscent of the evil Purple Tentacle. Handwritten fonts were also super cool back in the 90s, so there you go.
+
+1. Imported the Rock Salt cursive front from Google Fonts, and accompanied this with the sans-serif "Noto Sons" font to refine the overall appearance.
+2. A dark purple theme colour was used back the background and headers. I've used !important to override specificity issues produced by conflicting stylesheets; not best practice, but does the job.
+3. A nuclear green was used for colour highlights. This is also used as a hover effect when hovering over any headers.
+4. h1 header margins were increased, to made the pages feel less "cramped".
+5. I also overrode the layout styling for the wrapper, article, and nav elements. I wanted the bottom "back" button to always be at the bottom of the page when there was not enough content to fill the page. Looks nicer.
+6. I customised the error handler layout and presentation. It also now looks nicer, I think.
+
 ## Copyright Attributions
 
 Attribution for 404 Error handler image:

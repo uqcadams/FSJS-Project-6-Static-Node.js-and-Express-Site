@@ -1,27 +1,21 @@
+//- Root homepage template.
+
 extends layout.pug
 
 block content
 
   article.portfolio-intro
 
-    //- Replace with your own heading like 'My Portfolio', or 'Hey, Potential Employers', or 'Let's make the web great together!' 
     h1 Hey look, another portfolio!
 
-    //- Replace with a description for your portfolio, what this project is, it's purpose, what it's supposed to accomplish, etc. 
     p Wow, amazing! This portfolio has been prepared as Project 6 of the Team Treehouse Full Stack JavaScript techdegree. It demonstrates an evolving skillset with server-side JavaScript, and uses Node.js, Express, and Pug to deliver customised HTML templates with information about different projects completed throughout the techdegree. I completed another portfolio website project as the final capstone submission for my previous Front End Web Development techdegree, and so aim to populate this submission with a few examples of my work from across the two programs. 
 
   article.portfolio-project-thumbs
     .projects-box.box.grid
 
-      //- Use the Pug `each` iterator to loop over the projects in your data file  
-      
-        //- Use the example Pug code below and interpolated template literals as needed to dynamically generate:
-          //- The paths in the link's href and img's src attributes
-          //- The text 'Thumbnail' interpolated with the project title for the img's alt attribute
-          //- The project title for the h5 element's text
       each project in projects
         .cell
           a(href=`/project/${project.id}`)
-            img.thumbnail(src=`${project.image_urls.main}`, alt=`${project.description}`)
+            img.thumbnail(src=`${project.image_urls.main}`, alt=`${project.project_name}`)
             h5 #{project.project_name}
 

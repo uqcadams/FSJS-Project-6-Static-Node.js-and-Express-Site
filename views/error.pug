@@ -1,3 +1,5 @@
+//- Generic error page when the server returns a non-404 error
+
 extends layout.pug
 
 block content 
@@ -7,7 +9,7 @@ block content
       span &larr;
       |  Back
   
-  section.portfolio-error.box
+  article.portfolio-error.box
 
       h1= error.message 
       h2 Error code: #{error.status} 

@@ -1,3 +1,5 @@
+//- Template to handle 404 errors
+
 extends layout.pug
 
 block content 
@@ -7,18 +9,18 @@ block content
       span &larr;
       |  Back
   
-  section.portfolio-error.box
+  article.portfolio-error.box
 
       h1= error.message 
 
       p.error Wherever you are, whatever you're trying to do - it's not working. Try going back to the main page, and have another go at finding what you're looking for! Alternatively, expand the accordion below to read the error message stack.
 
-      img.error404-img(src="/static/images/404-page-not-found.jpg", alt="", srcset="")
+      img.error404-img(src="/static/images/404-page-not-found.jpg", alt="404 Page Not Found!")
 
       details 
         summary Expand to read the error summary
-        pre Error code: #{error.status}
-        pre= error.stack
+        p Error code: #{error.status}
+        p= error.stack
 
   nav.nav
     a(href='/')

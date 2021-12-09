@@ -1,16 +1,7 @@
+/* Note - The following are implemented to override providing styles in the styles.css stylesheet */
 /* 
-  Error Handler 
+  General Styling
 */
-
-.error404-img {
-  width: 100%;
-  max-width: 500px;
-  margin-bottom: 15px;
-}
-
-p.error {
-  max-width: 100ch;
-}
 
 body {
   font-family: "Noto Sans", sans-serif;
@@ -64,6 +55,9 @@ p {
   color: rgb(18, 225, 25);
 }
 
+/* 
+  Layout Adjustments
+*/
 .wrapper {
   display: flex;
   flex-flow: column;
@@ -71,8 +65,30 @@ p {
 
 article {
   flex-grow: 1;
+  background-color: white;
 }
 
 nav {
   background-color: white;
+}
+
+/* 
+  Error Handler 
+*/
+.portfolio-error {
+  max-width: unset;
+}
+
+.error404-img {
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 15px;
+}
+
+p.error {
+  max-width: 100ch;
+}
+
+details p {
+  max-width: 100ch;
 }

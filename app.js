@@ -5,6 +5,7 @@ const app = express();
 app.set("view engine", "pug");
 app.use("/static", express.static("public"));
 
+// Defines the routes for the portfolio website. Project routing is kept separate.
 const mainRoutes = require("./routes");
 const projectRoutes = require("./routes/projects");
 app.use(mainRoutes);
@@ -17,11 +18,11 @@ app.use((req, res, next) => {
   next(err);
 });
 
+// Redirects the user to appropriate error pages when different errors are encountered
 app.use((err, req, res, next) => {
   res.locals.error = err;
-  // res.status(err.status);
-
   if (err.status === 404) {
+    console.log("Hi friend, this page cannot be found!");
     res.render("page-not-found", err);
   } else {
     res.render("error", err);
